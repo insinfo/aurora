@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurora Siqueira - Vereadora por Rio das Ostras</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        header {
+
+            background: #2d3e5a;
+            padding: 10px 0;
+
+        }
+
+        .hero {
+            overflow: hidden;
+            background: url('banner.png') no-repeat center center;
+            background-size: cover;
+            height: 60vh;
+            display: flex;
+            align-items: end;
+            justify-content: space-between;
+            color: #fff;
+        }
+
+        .hero img {
+            margin-bottom: -5rem;
+            height: 95%;
+            object-fit: cover;
+        }
+
+        /* Adicionando Media Queries para telas menores */
+        @media (max-width: 768px) {
+            .hero {
+                height: 100vh;
+                /* 100% da altura da viewport em telas menores */
+                flex-direction: column;
+                /* Coloca os elementos em coluna */
+                align-items: center;
+                /* Centraliza os itens horizontalmente */
+                justify-content: center;
+                /* Centraliza os itens verticalmente */
+            }
+
+            .hero img {
+                margin-bottom: 0;
+                /* Remove a margem negativa em telas menores */
+                width: 100%;
+                /* Ajusta a largura da imagem para 100% */
+                max-width: 20rem;
+                /* Limita o tamanho máximo da imagem */
+            }
+
+            .cta-button {
+                margin-top: 20px;
+                /* Adiciona um espaço entre o botão e o conteúdo acima */
+            }
+        }
+
+        .cta-button {
+            background-color: #00CBA9;
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .gallery-item {
+            max-width: 200px;
+        }
+
+        footer {
+            background-color: #221c2c;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .events,
+        .proposals,
+        .gallery,
+        .contact {
+            padding: 60px 0;
+        }
+
+        .bg-primary {
+            background-color: #007bff !important;
+        }
+
+        .bg-danger {
+            background-color: #dc3545 !important;
+        }
+
+        .bg-secondary {
+            background-color: #6c757d !important;
+        }
+
+        .social-icons a {
+            color: #fff;
+        }
+
+        .card-margin {
+            margin-bottom: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="#" class="logo text-white fw-bold text-decoration-none">AURORA SIQUEIRA<br>Vereadora por Rio das
+                Ostras</a>
+            <nav>
+                <a href="#" class="text-white text-decoration-none ms-3">INÍCIO</a>
+                <a href="#events" class="text-white text-decoration-none ms-3">EVENTOS</a>
+                <a href="#proposals" class="text-white text-decoration-none ms-3">PROPOSTAS</a>
+                <a href="#gallery" class="text-white text-decoration-none ms-3">GALERIA</a>
+                <span class="social-icons ms-3">
+                    <a href="#" class="text-white ms-2"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white ms-2"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white ms-2"><i class="fab fa-youtube"></i></a>
+                </span>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero d-flex">
+        <div class="container text-white p-4 mb-4">
+            <h1 style="font-size: 4rem;">AURORA SIQUEIRA</h1>
+            <h2 style="font-size: 3.4rem;">23.333</h2>
+            <p class="fs-4">Compartilhe sua opinião.</p>
+            <a href="#" class="cta-button">ENVIE UM EMAIL</a>
+        </div>
+
+        <img src="aurora_siqueiras.png" alt="Aurora Siqueira">
+
+    </section>
+
+    <section id="events" class="events py-5  text-white" style="background-color: #25c8b3;">
+        <div class="container">
+            <h2>Eventos</h2>
+            <div class="row g-4">
+                <!-- Primeiro Evento -->
+                <div class="col-md-4">
+                    <div class="card card-margin">
+                        <div class="card-header no-border">
+                            <h5 class="card-title">Segunda</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="">
+                                <div class=" d-flex align-items-center">
+                                    <div class=" text-center p-3 rounded-circle bg-light text-primary">
+                                        <span class="h2">09</span>
+                                        <span>APR</span>
+                                    </div>
+                                    <div class="ms-3">
+                                        <span class="fw-bold">Caminhada na Rodovia Amaral Peixoto</span><br>
+                                        <span class="text-muted">Horário: 09:00</span>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <p>Local: Rodovia Amaral Peixoto, Rio das Ostras</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Segundo Evento (Modificado para o mesmo layout do primeiro) -->
+                <div class="col-md-4">
+                    <div class="card card-margin">
+                        <div class="card-header no-border">
+                            <h5 class="card-title">Terça</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="">
+                                <div class=" d-flex align-items-center">
+                                    <div class=" text-center p-3 rounded-circle bg-light text-primary">
+                                        <span class="h2">09</span>
+                                        <span>APR</span>
+                                    </div>
+                                    <div class="ms-3">
+                                        <span class="fw-bold">Reunião na Comunidade Cidade Praiana</span><br>
+                                        <span class="text-muted">Horário: 14:00</span>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <p>Local: Centro Comunitário, Cidade Praiana</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card card-margin">
+                        <div class="card-header no-border">
+                            <h5 class="card-title">Domingo</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="">
+                                <div class=" d-flex align-items-center">
+                                    <div class=" text-center p-3 rounded-circle bg-light text-primary">
+                                        <span class="h2">09</span>
+                                        <span>APR</span>
+                                    </div>
+                                    <div class="ms-3">
+                                        <span class="fw-bold">Reunião na Comunidade Cidade Praiana</span><br>
+                                        <span class="text-muted">Horário: 14:00</span>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <p>Local: Centro Comunitário, Cidade Praiana</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="proposals" class="proposals py-5  text-white" style="background-color: #eb268f;">
+        <div class="container">
+            <h2>Propostas</h2>
+            <div class="text-start">
+                <h3>Desenvolvimento Econômico e Emprego</h3>
+                <ul>
+                    <li>Indicação da criação da Casa do Empreendedor;</li>
+                    <li>Revisão da legislação orçamentária promovendo a destinação de recursos à Zona Especial de
+                        Negócios – ZEN;</li>
+                    <li>Promoção do desenvolvimento econômico sustentável e incentivos para empresas.</li>
+                </ul>
+                <h3>Saúde</h3>
+                <ul>
+                    <li>Aprimoramento dos espaços de saúde do município;</li>
+                    <li>Convênios com clínicas particulares para zerar a demanda reprimida;</li>
+                    <li>Criação de um ecossistema integrado de saúde.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery py-5 text-center bg-dark text-white">
+        <div class="container d-flex flex-wrap justify-content-center gap-3">
+            <img src="https://picsum.photos/seed/picsum/200/300?blur" alt="Imagem 1" class="gallery-item">
+            <img src="https://picsum.photos/seed/picsum/200/300?blur" alt="Imagem 2" class="gallery-item">
+            <img src="https://picsum.photos/seed/picsum/200/300?blur" alt="Imagem 3" class="gallery-item">
+            <img src="https://picsum.photos/seed/picsum/200/300?blur" alt="Imagem 4" class="gallery-item">
+            <img src="https://picsum.photos/seed/picsum/200/300?blur" alt="Imagem 5" class="gallery-item">
+        </div>
+    </section>
+
+    <section id="contact" class="contact py-5 text-center bg-secondary text-white">
+        <h2>Contato</h2>
+        <p>Para entrar em contato, envie um e-mail para: <a href="mailto:contato@aurorasiqueira.com.br"
+                class="text-white">contato@aurorasiqueira.com.br</a></p>
+    </section>
+
+    <footer class="py-3">
+        <p class="mb-0">COLIGAÇÃO RIO DAS OSTRAS BEM MELHOR - União Brasil / Federação PSDB-Cidadania / Podemos/Novo /
+            Mobiliza / PMB/PSB/Solidariedade</p>
+        <p class="mb-0">CNPJ Vereador: 56.460.388/0001-68</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
